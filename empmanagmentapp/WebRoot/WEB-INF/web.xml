@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description> </description>
+    <display-name> </display-name>
+    <servlet-name>RegisterEmployeeServlet</servlet-name>
+    <servlet-class>org.emp.RegisterEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginEmployeeServlet</servlet-name>
+    <servlet-class>or.emp.LoginEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Insertemp</servlet-name>
+    <servlet-class>org.emp.Insertemp</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Selectemp</servlet-name>
+    <servlet-class>org.emp.Selectemp</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Deleteemp</servlet-name>
+    <servlet-class>org.emp.Deleteemp</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Updateemp</servlet-name>
+    <servlet-class>org.emp.Updateemp</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>RegisterEmployeeServlet</servlet-name>
+    <url-pattern>/registeremployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginEmployeeServlet</servlet-name>
+    <url-pattern>/loginemployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Insertemp</servlet-name>
+    <url-pattern>/Insertemp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Selectemp</servlet-name>
+    <url-pattern>/Selectemp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Deleteemp</servlet-name>
+    <url-pattern>/Deleteemp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Updateemp</servlet-name>
+    <url-pattern>/Updateemp</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>empregister.html</welcome-file>
+    <welcome-file>Home.html</welcome-file>
+		<welcome-file>Selectemp.html</welcome-file>
+		<welcome-file>Insertemp.html</welcome-file>
+		<welcome-file>Deleteemp.html</welcome-file>
+		<welcome-file>Updateemp.html</welcome-file>
+  </welcome-file-list>
+</web-app>
